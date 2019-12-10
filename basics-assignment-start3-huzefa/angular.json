@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-first-app": {
+    "basics-assignment-start3-huzefa": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-first-app",
+            "outputPath": "dist/basics-assignment-start3-huzefa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-first-app:build"
+            "browserTarget": "basics-assignment-start3-huzefa:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-first-app:build:production"
+              "browserTarget": "basics-assignment-start3-huzefa:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-first-app:build"
+            "browserTarget": "basics-assignment-start3-huzefa:build"
           }
         },
         "test": {
@@ -113,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-first-app:serve"
+            "devServerTarget": "basics-assignment-start3-huzefa:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-first-app:serve:production"
+              "devServerTarget": "basics-assignment-start3-huzefa:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "my-first-app"
+  "defaultProject": "basics-assignment-start3-huzefa"
 }

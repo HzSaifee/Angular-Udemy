@@ -11,11 +11,13 @@
 <button class="btn btn-primary" 
 [disabled] = "!allowNewServer"
 (click) = "onCreateServer()">Add Server</button>
+<button class="btn btn-primary" 
+[disabled] = "isServersEmpty()"
+(click) = "onResetServers()">Reset Servers</button>
 <!-- <p> {{ allowNewServer }} </p> -->
 <!-- <p> {{ serverCreationStatus }} </p> -->
 <p *ngIf = "serverCreated else noServer"> {{ serverCreationStatus}} </p>
 <ng-template #noServer>
     <p> {{ serverCreationStatus }} </p>
 </ng-template>
-<app-server>Server File Loaded</app-server>
-<app-server>Server File Loaded</app-server>
+<app-server *ngFor="let server of servers">Server File Loaded</app-server>
